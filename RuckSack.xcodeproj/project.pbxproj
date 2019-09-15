@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		DADE8CC6232E77720057B0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CC5232E77720057B0BB /* AppDelegate.swift */; };
 		DADE8CC8232E77720057B0BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CC7232E77720057B0BB /* ViewController.swift */; };
-		DADE8CCB232E77720057B0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE8CC9232E77720057B0BB /* Main.storyboard */; };
 		DADE8CCD232E77730057B0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADE8CCC232E77730057B0BB /* Assets.xcassets */; };
-		DADE8CD0232E77730057B0BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE8CCE232E77730057B0BB /* LaunchScreen.storyboard */; };
 		DADE8CDB232E77730057B0BB /* RuckSackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CDA232E77730057B0BB /* RuckSackTests.swift */; };
+		DADE8CEB232E7C940057B0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE8CE9232E7C940057B0BB /* Main.storyboard */; };
+		DADE8CEC232E7C940057B0BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE8CEA232E7C940057B0BB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		DADE8CC2232E77720057B0BB /* RuckSack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuckSack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADE8CC5232E77720057B0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADE8CC7232E77720057B0BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DADE8CCA232E77720057B0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DADE8CCC232E77730057B0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DADE8CCF232E77730057B0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADE8CD1232E77730057B0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DADE8CD6232E77730057B0BB /* RuckSackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuckSackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADE8CDA232E77730057B0BB /* RuckSackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuckSackTests.swift; sourceTree = "<group>"; };
 		DADE8CDC232E77730057B0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADE8CE9232E7C940057B0BB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DADE8CEA232E7C940057B0BB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +77,13 @@
 		DADE8CC4232E77720057B0BB /* RuckSack */ = {
 			isa = PBXGroup;
 			children = (
+				DADE8CE8232E7C3E0057B0BB /* Model */,
+				DADE8CE7232E7C350057B0BB /* View */,
+				DADE8CE6232E7C250057B0BB /* Controller */,
+				DADE8CE5232E7C130057B0BB /* Extension */,
 				DADE8CC5232E77720057B0BB /* AppDelegate.swift */,
 				DADE8CC7232E77720057B0BB /* ViewController.swift */,
-				DADE8CC9232E77720057B0BB /* Main.storyboard */,
 				DADE8CCC232E77730057B0BB /* Assets.xcassets */,
-				DADE8CCE232E77730057B0BB /* LaunchScreen.storyboard */,
 				DADE8CD1232E77730057B0BB /* Info.plist */,
 			);
 			path = RuckSack;
@@ -94,6 +96,36 @@
 				DADE8CDC232E77730057B0BB /* Info.plist */,
 			);
 			path = RuckSackTests;
+			sourceTree = "<group>";
+		};
+		DADE8CE5232E7C130057B0BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DADE8CE6232E7C250057B0BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DADE8CE7232E7C350057B0BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DADE8CE9232E7C940057B0BB /* Main.storyboard */,
+				DADE8CEA232E7C940057B0BB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DADE8CE8232E7C3E0057B0BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DADE8CD0232E77730057B0BB /* LaunchScreen.storyboard in Resources */,
 				DADE8CCD232E77730057B0BB /* Assets.xcassets in Resources */,
-				DADE8CCB232E77720057B0BB /* Main.storyboard in Resources */,
+				DADE8CEC232E7C940057B0BB /* LaunchScreen.storyboard in Resources */,
+				DADE8CEB232E7C940057B0BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,25 +251,6 @@
 			targetProxy = DADE8CD7232E77730057B0BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DADE8CC9232E77720057B0BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DADE8CCA232E77720057B0BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DADE8CCE232E77730057B0BB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DADE8CCF232E77730057B0BB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DADE8CDD232E77730057B0BB /* Debug */ = {
