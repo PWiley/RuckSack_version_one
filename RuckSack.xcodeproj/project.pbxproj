@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DADE8CC6232E77720057B0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CC5232E77720057B0BB /* AppDelegate.swift */; };
-		DADE8CC8232E77720057B0BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CC7232E77720057B0BB /* ViewController.swift */; };
 		DADE8CCD232E77730057B0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADE8CCC232E77730057B0BB /* Assets.xcassets */; };
 		DADE8CDB232E77730057B0BB /* RuckSackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CDA232E77730057B0BB /* RuckSackTests.swift */; };
 		DADE8CEB232E7C940057B0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE8CE9232E7C940057B0BB /* Main.storyboard */; };
@@ -19,6 +18,7 @@
 		DADE8CF8232E7D1D0057B0BB /* ExchangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CF1232E7D1D0057B0BB /* ExchangeCell.swift */; };
 		DADE8CF9232E7D1D0057B0BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CF2232E7D1D0057B0BB /* ViewController.swift */; };
 		DADE8CFA232E7D1D0057B0BB /* TranslatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CF3232E7D1D0057B0BB /* TranslatorViewController.swift */; };
+		DADE8CFC232E7DCD0057B0BB /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE8CFB232E7DCD0057B0BB /* ExtensionUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,6 @@
 /* Begin PBXFileReference section */
 		DADE8CC2232E77720057B0BB /* RuckSack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuckSack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADE8CC5232E77720057B0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DADE8CC7232E77720057B0BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DADE8CCC232E77730057B0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADE8CD1232E77730057B0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DADE8CD6232E77730057B0BB /* RuckSackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuckSackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +47,7 @@
 		DADE8CF1232E7D1D0057B0BB /* ExchangeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeCell.swift; sourceTree = "<group>"; };
 		DADE8CF2232E7D1D0057B0BB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DADE8CF3232E7D1D0057B0BB /* TranslatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatorViewController.swift; sourceTree = "<group>"; };
+		DADE8CFB232E7DCD0057B0BB /* ExtensionUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,14 +89,13 @@
 		DADE8CC4232E77720057B0BB /* RuckSack */ = {
 			isa = PBXGroup;
 			children = (
+				DADE8CD1232E77730057B0BB /* Info.plist */,
+				DADE8CCC232E77730057B0BB /* Assets.xcassets */,
+				DADE8CC5232E77720057B0BB /* AppDelegate.swift */,
 				DADE8CE8232E7C3E0057B0BB /* Model */,
 				DADE8CE7232E7C350057B0BB /* View */,
 				DADE8CE6232E7C250057B0BB /* Controller */,
 				DADE8CE5232E7C130057B0BB /* Extension */,
-				DADE8CC5232E77720057B0BB /* AppDelegate.swift */,
-				DADE8CC7232E77720057B0BB /* ViewController.swift */,
-				DADE8CCC232E77730057B0BB /* Assets.xcassets */,
-				DADE8CD1232E77730057B0BB /* Info.plist */,
 			);
 			path = RuckSack;
 			sourceTree = "<group>";
@@ -113,6 +112,7 @@
 		DADE8CE5232E7C130057B0BB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DADE8CFB232E7DCD0057B0BB /* ExtensionUIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -248,12 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADE8CF8232E7D1D0057B0BB /* ExchangeCell.swift in Sources */,
-				DADE8CC8232E77720057B0BB /* ViewController.swift in Sources */,
 				DADE8CFA232E7D1D0057B0BB /* TranslatorViewController.swift in Sources */,
 				DADE8CF6232E7D1D0057B0BB /* ExchangeViewController.swift in Sources */,
 				DADE8CF5232E7D1D0057B0BB /* WeatherViewController.swift in Sources */,
 				DADE8CF9232E7D1D0057B0BB /* ViewController.swift in Sources */,
 				DADE8CF7232E7D1D0057B0BB /* LanguageCell.swift in Sources */,
+				DADE8CFC232E7DCD0057B0BB /* ExtensionUIView.swift in Sources */,
 				DADE8CC6232E77720057B0BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
