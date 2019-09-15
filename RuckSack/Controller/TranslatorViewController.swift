@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TranslatorViewController: ViewController {
+class TranslatorViewController: UIViewController {
     
     var translate = Translate()
     
@@ -41,7 +41,6 @@ extension TranslatorViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let language = translate.languages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "LanguageCell") as! LanguageCell
-        
         cell.setLanguage(language: language)
         return cell
     }
